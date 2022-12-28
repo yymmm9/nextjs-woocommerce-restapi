@@ -8,6 +8,52 @@ const api = new WooCommerceRestApi( {
 } );
 
 /**
+ * Get Order.
+ *
+ * @return {Promise<void>}
+ */
+// export const getOrderData = async ( status, perPage = 50 ) => {
+// 	console.log(status);
+export const getOrderData = async ( status, filter, isoDate, perPage = 50 ) => {
+
+	if ( filter == "after" ){
+		return await api.get(
+			`orders`,
+			{
+				per_page: perPage || 50,
+				status: status || null,
+				after: isoDate || null,
+			},
+		);
+	}else{
+		return await api.get(
+			`orders`,
+			{
+				per_page: perPage || 50,
+				status: status || null,
+				before: isoDate || null,
+			},
+		);
+	}
+
+	
+};
+/**
+ * Get Customer.
+ *
+ * @return {Promise<void>}
+ */
+export const getCustomerData = async ( email, perPage = 50 ) => {
+	return await api.get(
+		'customers',
+		{
+			per_page: perPage || 50,
+			email: email || null,
+		},
+	);
+};
+
+/**
  * Get Products.
  *
  * @return {Promise<void>}

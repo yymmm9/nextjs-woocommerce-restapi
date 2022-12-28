@@ -2,11 +2,136 @@
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
-@import "../fonts/fonts.scss";
+// @import "../fonts/fonts.scss";
 
-@import "01-settings/typography";
+// @import "01-settings/typography";
 @import "03-components/elements/list";
 @import "03-components/layouts/footer";
 
 // Image Gallery Styles.
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
+.notion {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #37352f;
+    caret-color: #37352f;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Apple Color Emoji,Arial,sans-serif,Segoe UI Emoji,Segoe UI Symbol
+}
+
+.notion-column>*,.notion-page>*,.notion>* {
+    padding: 3px 0
+}
+
+.notion * {
+    box-sizing: border-box;
+    margin-block-start:0;margin-block-end:0}
+
+.notion-red {
+    color: #e03e3e
+}
+
+.notion-pink {
+    color: #ad1a72
+}
+
+.notion-blue {
+    color: #0b6e99
+}
+
+.notion-purple {
+    color: #6940a5
+}
+
+.notion-teal {
+    color: #0f7b6c
+}
+
+.notion-yellow {
+    color: #dfab01
+}
+
+.notion-orange {
+    color: #d9730d
+}
+
+.notion-brown {
+    color: #64473a
+}
+
+.notion-gray {
+    color: #9b9a97
+}
+
+.notion-red_background {
+    background-color: #fbe4e4
+}
+
+.notion-pink_background {
+    background-color: #f4dfeb
+}
+
+.notion-blue_background {
+    background-color: #ddebf1
+}
+
+.notion-purple_background {
+    background-color: #eae4f2
+}
+
+.notion-teal_background {
+    background-color: #ddedea
+}
+
+.notion-yellow_background {
+    background-color: #fbf3db
+}
+
+.notion-orange_background {
+    background-color: #faebdd
+}
+
+.notion-brown_background {
+    background-color: #e9e5e3
+}
+
+.notion-gray_background {
+    background-color: #ebeced
+}
+
+.notion-red_background_co {
+    background-color: rgba(251,228,228,.3)
+}
+
+.notion-pink_background_co {
+    background-color: rgba(244,223,235,.3)
+}
+
+.notion-blue_background_co {
+    background-color: rgba(221,235,241,.3)
+}
+
+.notion-purple_background_co {
+    background-color: rgba(234,228,242,.3)
+}
+
+.notion-teal_background_co {
+    background-color: rgba(221,237,234,.3)
+}
+
+.notion-yellow_background_co {
+    background-color: rgba(251,243,219,.3)
+}
+
+.notion-orange_background_co {
+    background-color: rgba(250,235,221,.3)
+}
+
+.notion-brown_background_co {
+    background-color: rgba(233,229,227,.3)
+}
+
+.notion-gray_background_co {
+    background-color: rgba(235,236,237,.3)
+}

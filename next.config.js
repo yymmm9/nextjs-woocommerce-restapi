@@ -21,5 +21,11 @@ module.exports = {
 	 */
 	images: {
 		domains: [ allowedImageWordPressDomain, 'via.placeholder.com' ],
+		allowFutureImage: true
 	},
+	experimental: {
+        images: {
+            allowFutureImage: true
+        }
+    }
 }
