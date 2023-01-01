@@ -1,5 +1,6 @@
 import { AppProvider } from '../context';
-import Header from './header';
+// import Header from './header';
+import Header from './nav';
 import Footer from './footer';
 
 const Layout = ({children, headerFooter}) => {
@@ -7,8 +8,8 @@ const Layout = ({children, headerFooter}) => {
 	return (
 		<AppProvider>
 			<div>
-				{/* <Header header={header}/> */}
-				<main className="container mx-auto py-4 min-h-50vh">
+				<Header header={header}/>
+				<main className="container mx-auto px-2 min-h-50vh">
 					{children}
 				</main>
 				{/* <Footer footer={footer}/> */}

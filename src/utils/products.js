@@ -8,6 +8,21 @@ const api = new WooCommerceRestApi( {
 } );
 
 /**
+ * Update Order.
+ *
+ * @return {Promise<void>}
+ */
+export const updateOrderData = async ( data, id ) => {
+
+	api.put(`orders/${id}`, data)
+		.then((response) => {
+			console.log(response.data);
+		})
+		.catch((error) => {
+			console.log(error.response.data);
+		});
+	}
+/**
  * Get Order.
  *
  * @return {Promise<void>}
