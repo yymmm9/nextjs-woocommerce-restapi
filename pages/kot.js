@@ -13,8 +13,6 @@ import { getProductsData, getCustomerData, getOrderData } from '../src/utils/pro
 import Layout from '../src/components/layout';
 
 export default function Home({ headerFooter, products, orders}) {
-
-	// console.log({data});
 	return (
 		<Layout headerFooter={headerFooter || {}}>
 			<Orders orders={orders}/>
